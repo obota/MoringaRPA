@@ -1,0 +1,8 @@
+<Flowchart>
+    <Sequence DisplayName="Read Request">
+        <Assign Name="RequestFileContent" Value="{ReadTextFile(${RequestFileName})}" />
+        <Assign Name="Name" Value="{ExtractValue(${RequestFileContent}, 'Name: (.*)')}" />
+        <Assign Name="Email" Value="{ExtractValue(${RequestFileContent}, 'Email: (.*)')}" />
+        <Assign Name="Query" Value="{ExtractValue(${RequestFileContent}, 'Query: (.*)')}" />
+    </Sequence>
+</Flowchart>

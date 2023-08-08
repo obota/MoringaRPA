@@ -1,0 +1,12 @@
+<Flowchart>
+    <Sequence DisplayName="SaaS Automation">
+        <OpenApplication ApplicationPath="SaaSApp.exe" />
+        <AttachWindow WindowTitle="SaaS App" />
+        <TypeInto Target="SaaS App Input Field" Text="${Name}" />
+        <TypeInto Target="SaaS App Input Field" Text="${Email}" />
+        <TypeInto Target="SaaS App Input Field" Text="${Query}" />
+        <Click Target="SaaS App Submit Button" />
+        <Hotkey Key="Ctrl+S" />
+        <CloseWindow WindowTitle="SaaS App" />
+    </Sequence>
+</Flowchart>
